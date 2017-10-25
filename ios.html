@@ -1,0 +1,6 @@
+FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc]
+    initWithGraphPath:@"/me"
+           parameters:@{ @"fields": @"id,name,hometown,likes,location,photos",}
+           HTTPMethod:@"GET"];
+[request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+}];
